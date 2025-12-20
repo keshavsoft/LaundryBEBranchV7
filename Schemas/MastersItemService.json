@@ -18,5 +18,9 @@
             "type": "text",
             "isInput": true
         }
+    ],
+     "SubRoutes": [
+        "Read",
+        "Insert"
     ]
 }

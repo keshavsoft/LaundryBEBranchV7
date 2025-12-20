@@ -2,8 +2,6 @@
     "Tables": [
         "BranOrdersKKD",
         "BranOrdersOngole",
-        "TokenTable",
-        "UsersTable",
         "MastersAddOns",
         "MastersCustomers",
         "MastersItemCategory",

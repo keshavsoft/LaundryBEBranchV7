@@ -17,16 +17,17 @@ const StartFunc = ({ inUserName, inPassword }) => {
     if (fs.existsSync(filePath)) {
       const data = JSON.parse(fs.readFileSync(filePath, 'utf8'));
 
-      let LocalRemoveUndefined = data.find(element => {
-        return element.UserName === LocalUserName && element.Password == LocalPassword
+      let LocalFindRow = data.find(element => {
+        return element.UserName === LocalUserName && element.Password === LocalPassword
       });
 
-      if (!LocalRemoveUndefined) {
+      if (!LocalFindRow) {
         return LocalReturnObject
       };
 
       LocalReturnObject.KTF = true;
-      LocalReturnObject.BranchName = LocalRemoveUndefined?.Branch;
+      LocalReturnObject.DataPk = LocalFindRow.DataPk;
+
       return LocalReturnObject;
     } else {
       LocalReturnObject.KReason = `File ${LocalFileName}.json does not exist in ${LocalDataPath} folder.`;

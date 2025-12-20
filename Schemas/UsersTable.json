@@ -18,8 +18,22 @@
     ],
     "data": [
         {
-            "UserName": "Keshav",
-            "Password": 9848163021
+            "UserName": "KKD",
+            "Password": "KKD",
+            "DataPK": "901",
+            "BranchName": "BranOrdersKKD"
+        },
+        {
+            "UserName": "Ongole",
+            "Password": "Ongole",
+            "DataPK": "902",
+            "BranchName": "BranOrdersOngole"
+        },
+        {
+            "UserName": "KKD",
+            "Password": "KKD",
+            "DataPK": "903",
+            "BranchName": "BranOrdersKKD"
         }
     ],
     "Vertical": [
@@ -41,5 +55,8 @@
         "Header": {
             "autoFocus": "title"
         }
-    }
+    },
+    "SubRoutes": [
+        "Read"
+    ]
 }
