@@ -76,5 +76,9 @@
             "isInput": true
         }
         
+    ],
+     "SubRoutes": [
+        "Read",
+        "Insert"
     ]
 }

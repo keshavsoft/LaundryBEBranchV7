@@ -1,5 +1,6 @@
-import { StartFunc as StartFuncFromCreateToken } from "../../../Token/jwt/CreateToken.js";
+import { v4 as uuidv4 } from 'uuid';
 
+import { StartFunc as StartFuncFromCreateToken } from "../../../Token/jwt/CreateToken.js";
 import { postDefaultFunc as postDefaultFuncFromRepo } from "../Repos/entryFile.js";
 
 let postFilterDataFromBodyFunc = (req, res) => {
@@ -16,15 +17,13 @@ let postFilterDataFromBodyFunc = (req, res) => {
     res.status(409).send(LocalFromRepo.KTF);
     return;
   }
-  let inObject = {};
-  inObject.BranchName = LocalFromRepo?.BranchName;
 
-  const jVarLocalToken = StartFuncFromCreateToken(inObject);
+  const LocalUuid = uuidv4();
+  const LocalToken = StartFuncFromCreateToken({ inObject: LocalFromRepo?.DataPk });
 
   res.set("Content-Type", "text/plain");
-  res
-    .cookie("KSToken", jVarLocalToken, { maxAge: 900000, httpOnly: false })
-    .end(jVarLocalToken);
+  res.cookie("KSToken", LocalToken, { maxAge: 900000, httpOnly: false })
+    .end(LocalToken);
 };
 
 export { postFilterDataFromBodyFunc };

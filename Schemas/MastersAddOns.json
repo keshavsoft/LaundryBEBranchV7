@@ -32,5 +32,9 @@
             "type": "number",
             "isInput": true
         } 
+    ],
+     "SubRoutes": [
+        "Read",
+        "Insert"
     ]
 }

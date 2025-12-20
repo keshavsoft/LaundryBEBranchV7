@@ -31,6 +31,7 @@ const StartFunc = ({ inUserName, inPassword }) => {
 
       LocalReturnObject.KTF = true;
       LocalReturnObject.BranchName = LocalUser?.BranchName;
+      LocalReturnObject.DataPk = LocalUser?.DataPK;
       return LocalReturnObject;
     } else {
       LocalReturnObject.KReason = `File ${LocalFileName}.json does not exist in ${LocalDataPath} folder.`;

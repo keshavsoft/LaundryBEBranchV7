@@ -27,5 +27,36 @@
             "type": "object"
         }
     ],
-    "data": []
+    "data": [],
+    "Vertical": [
+        {
+            "field": "ItemsInOrder",
+            "title": "ItemsInOrder",
+            "type": "object"
+        },
+        {
+            "field": "CustomerData",
+            "title": "CustomerData",
+            "type": "object"
+        },
+        {
+            "field": "OrderData",
+            "title": "OrderData",
+            "type": "object"
+        },
+        {
+            "field": "AddOnData",
+            "title": "AddOnData",
+            "type": "object"
+        },
+        {
+            "field": "CheckOutData",
+            "title": "CheckOutData",
+            "type": "object"
+        }
+    ],
+    "SubRoutes": [
+        "Read",
+        "Insert"
+    ]
 }
