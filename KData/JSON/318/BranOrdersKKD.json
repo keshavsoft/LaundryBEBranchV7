@@ -1,0 +1,253 @@
+[
+  {
+    "ItemsInOrder": {
+      "1": {
+        "Category": "Men",
+        "ItemName": "Men PATTU SAREE CW",
+        "ItemType": "PATTU SAREE",
+        "Rate": "50",
+        "Pcs": "5",
+        "Total": 250,
+        "location": "Vizag",
+        "DeliveryDateTime": "2025-11-13",
+        "ItemService": "CW",
+        "AddOnArray": [],
+        "pk": 1,
+        "Fk": "1"
+      }
+    },
+    "CustomerData": {
+      "Mobile": "5555555555",
+      "UserName": "undefined",
+      "CustomerName": "mm",
+      "DOB": "",
+      "GSTNumber": "",
+      "City": "",
+      "Occupation": ""
+    },
+    "OrderData": {
+      "BranchName": "KKD",
+      "Mobile": "5555555555"
+    },
+    "AddOnData": {},
+    "CheckOutData": {
+      "1": {
+        "RoundOff": 0,
+        "CashAmount": 295,
+        "CardAmount": 0,
+        "UPIAmount": 0,
+        "DiscountPer": 0,
+        "GstData": {
+          "DiscountAmount": 0,
+          "CGST": 22.5,
+          "SGST": 22.5
+        },
+        "pk": 1,
+        "Fk": "1"
+      }
+    },
+    "pk": 1,
+    "ServerInsertedTimeStamp": "2025-11-06T10:39:20.675Z"
+  },
+  {
+    "ItemsInOrder": {
+      "1": {
+        "Category": "Men",
+        "ItemName": "Men PATTU SAREE CW",
+        "ItemType": "PATTU SAREE",
+        "Rate": "50",
+        "Pcs": "2",
+        "Total": 100,
+        "location": "Vizag",
+        "DeliveryDateTime": "2025-11-13",
+        "ItemService": "CW",
+        "AddOnArray": [],
+        "pk": 1,
+        "Fk": "2"
+      }
+    },
+    "CustomerData": {
+      "Mobile": "2222222222",
+      "UserName": "undefined",
+      "CustomerName": "prasad",
+      "DOB": "",
+      "GSTNumber": "",
+      "City": "",
+      "Occupation": ""
+    },
+    "OrderData": {
+      "BranchName": "KKD",
+      "Mobile": "2222222222"
+    },
+    "AddOnData": {},
+    "CheckOutData": {
+      "1": {
+        "RoundOff": 0,
+        "CashAmount": 118,
+        "CardAmount": 0,
+        "UPIAmount": 0,
+        "DiscountPer": 0,
+        "GstData": {
+          "DiscountAmount": 0,
+          "CGST": 9,
+          "SGST": 9
+        },
+        "pk": 1,
+        "Fk": "2"
+      }
+    },
+    "pk": 2,
+    "ServerInsertedTimeStamp": "2025-11-06T10:42:21.271Z"
+  },
+  {
+    "ItemsInOrder": {
+      "1": {
+        "Category": "Women",
+        "ItemName": "Women SHIRTE DW",
+        "ItemType": "SHIRTE",
+        "Rate": "70",
+        "Pcs": "1",
+        "Total": 70,
+        "location": "Vizag",
+        "DeliveryDateTime": "2025-11-13",
+        "ItemService": "DW",
+        "AddOnArray": [],
+        "pk": 1,
+        "Fk": "3"
+      }
+    },
+    "CustomerData": {
+      "Mobile": "2222222222",
+      "UserName": "undefined",
+      "CustomerName": "prasad",
+      "DOB": "",
+      "GSTNumber": "",
+      "City": "",
+      "Occupation": ""
+    },
+    "OrderData": {
+      "BranchName": "KKD",
+      "Mobile": "2222222222"
+    },
+    "AddOnData": {},
+    "CheckOutData": {
+      "1": {
+        "RoundOff": 0.22,
+        "CashAmount": 82,
+        "CardAmount": 0,
+        "UPIAmount": 0,
+        "DiscountPer": 1,
+        "GstData": {
+          "DiscountAmount": 0.7,
+          "CGST": 6.24,
+          "SGST": 6.24
+        },
+        "pk": 1,
+        "Fk": "3"
+      }
+    },
+    "pk": 3,
+    "ServerInsertedTimeStamp": "2025-11-06T10:45:51.320Z"
+  },
+  {
+    "ItemsInOrder": {
+      "1": {
+        "Category": "Men",
+        "ItemName": "Men SHIRTE DW",
+        "ItemType": "SHIRTE",
+        "Rate": "60",
+        "Pcs": "1",
+        "Total": 60,
+        "location": "Vizag",
+        "DeliveryDateTime": "2025-11-13",
+        "ItemService": "DW",
+        "AddOnArray": [],
+        "pk": 1,
+        "Fk": "4"
+      }
+    },
+    "CustomerData": {
+      "Mobile": "9848163021",
+      "UserName": "undefined",
+      "CustomerName": "Keshav",
+      "DOB": "",
+      "GSTNumber": "",
+      "City": "",
+      "Occupation": ""
+    },
+    "OrderData": {
+      "BranchName": "KKD",
+      "Mobile": "9848163021"
+    },
+    "AddOnData": {},
+    "CheckOutData": {
+      "1": {
+        "RoundOff": 0.2,
+        "CashAmount": 71,
+        "CardAmount": 0,
+        "UPIAmount": 0,
+        "DiscountPer": 0,
+        "GstData": {
+          "DiscountAmount": 0,
+          "CGST": 5.4,
+          "SGST": 5.4
+        },
+        "pk": 1,
+        "Fk": "4"
+      }
+    },
+    "pk": 4,
+    "ServerInsertedTimeStamp": "2025-11-06T11:06:35.636Z"
+  },
+  {
+    "ItemsInOrder": {
+      "1": {
+        "Category": "Women",
+        "ItemName": "Women SHIRTE DW",
+        "ItemType": "SHIRTE",
+        "Rate": "70",
+        "Pcs": "1",
+        "Total": 70,
+        "location": "Vizag",
+        "DeliveryDateTime": "2025-12-13",
+        "ItemService": "DW",
+        "AddOnArray": [],
+        "pk": 1,
+        "Fk": "5"
+      }
+    },
+    "CustomerData": {
+      "Mobile": "9848163021",
+      "UserName": "undefined",
+      "CustomerName": "Keshav",
+      "DOB": "",
+      "GSTNumber": "",
+      "City": "",
+      "Occupation": ""
+    },
+    "OrderData": {
+      "BranchName": "KKD",
+      "Mobile": "9848163021",
+      "Currentdateandtime": "2025-12-06T08:00:14.450Z"
+    },
+    "AddOnData": {},
+    "CheckOutData": {
+      "1": {
+        "RoundOff": 0.4,
+        "CashAmount": 83,
+        "CardAmount": 0,
+        "UPIAmount": 0,
+        "DiscountPer": 0,
+        "GstData": {
+          "DiscountAmount": 0,
+          "CGST": 6.3,
+          "SGST": 6.3
+        },
+        "pk": 1,
+        "Fk": "5"
+      }
+    },
+    "pk": 5,
+    "ServerInsertedTimeStamp": "2025-12-06T08:00:14.468Z"
+  }
+]
