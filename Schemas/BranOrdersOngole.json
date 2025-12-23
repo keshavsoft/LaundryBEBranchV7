@@ -57,6 +57,7 @@
     ],
     "SubRoutes": [
         "Read",
-        "Insert"
+        "Insert",
+        "SubTableOnObj"
     ]
 }
