@@ -1,6 +1,6 @@
-# LaundryBackEndV1
+# LaundryBackEndV7
 Nodejs Api serving static frontend
-<h1 align="center" color="#0000FF">crudBD</h1>
+<h1 align="center" color="#0000FF">LaundryBackEndV7</h1>
 
 [![KeshavSoft Logo](./KeshavSoft.jpg)](https://keshavsoft.com/)
 
@@ -17,13 +17,13 @@ Nodejs Api serving static frontend
 - [visual studio code extensions](#vscodeextensions)
  
 ### <a name="overview"></a>## **Overview** 🔎
-This project focuses on automating crudBD operations for JSON files, making it easy to manage and manipulate data. It offers a user-friendly interface for performing essential actions on JSON files, such as creating, reading, updating, and deleting records.
+This project focuses on Laundry operations for JSON files, making it easy to manage and manipulate data. It offers a user-friendly interface for performing essential actions on JSON files, such as creating, reading, updating, and deleting records.
 ### <a name="keyLocations"></a>## **Key Locations** 🔎
-- **Backend:** root:bin, root:binSecured ( for jwt protected end points same as bin ), root:binV3 for new branched End points
-- **Database:** root:KData/JSON
-- **Columns Schemas definition location :** root:KCode/DataSchema
-- **Table Schemas definition location :** root:KCode/TableSchema
-- **Table Schema to be considered :** root:KData/Config.json:ToDataDetails.DataPk
+- **Backend:** root:bin, root:binSecured ( for jwt protected end points same as bin ), root:SV7 for new branched End points
+- **Database:** root:Data
+- **Columns Schemas definition location :** root:Schemas
+- **Table Schemas definition location :** root:Schema.json
+- **Table Schema to be considered :** root:Data
 - **Frontend :** root:public
   
 ### <a name="installation"></a>## **Installation** 🚀
@@ -34,17 +34,26 @@ This project focuses on automating crudBD operations for JSON files, making it e
 
 3. Clone the repository
    ```
-   git clone https://github.com/keshavsoft/LaundryBEBranchV4
+   git clone https://github.com/keshavsoft/LaundryBEBranchV7
    ```
 4. Change Directory to LaundryBackEndV1 or Open the cloned folder, navigate to LaundryBackEndV1, and open the command prompt.
    ```
-    cd LaundryBEBranchV4
+    cd LaundryBEBranchV7
    ```
 5. Install Node modules
    ```
    npm install
    ```
-6. Run the Application
+6. Hold Ctrl + Shift + p 
+   ```
+   GenDataFromPk OnlyBackEnd
+   ```
+7. Run .bat Files
+   ```
+   :Root:/BatchFiles/ForLaundry/V4/forLogin.bat
+   :Root:/BatchFiles/ForLaundry/V4/forNewOrders.bat
+   ```
+8. Run the Application
 - ```node app```
 
 ### <a name="advancedinstallation"></a>## **advancedinstallation** 🚀
@@ -55,29 +64,31 @@ This project focuses on automating crudBD operations for JSON files, making it e
 
 3. Clone the repository
    ```
-   git clone https://github.com/keshavsoft/LaundryBackEndV1
+   git clone https://github.com/keshavsoft/LaundryBackEndV7
    ```
 4. Change Directory to LaundryBackEndV1 or Open the cloned folder, navigate to LaundryBackEndV1, and open the command prompt.
    ```
-   cd LaundryBackEndV1
+   cd LaundryBackEndV7
    ```
 5. Create .env in the root location, and paste the below line to that file
    ```
    PORT=7019
-   DataPk=required from root:/KSCode/JsonSchema/{DataPk}/DataSchema
+   DataPk=required from root:.env
    ```
-6. Run the below command to get Backend generated
+6. Run the below command to get frontend login generated
    ```
-   node .\KCode\ForBatV7\Backend.js
+   node .\BatchFiles\ForLaundry\V4\forLogin.bat
    ```
-7. Run the below command to get Database created
+7. Run the below command to get frontend for NewOrder generated
    ```
-   node .\KCode\ForBatV7\Database.js
+   node .\BatchFiles\ForLaundry\V4\forNewOrders.bat
    ```
-8. Run the below command to get Frontend generated
+8. Run the below command to get Backend generated
+
+   Hold Ctrl + Shift + p 
    ```
-   npm run home
-   ```   
+   GenDataFromPk OnlyBackEnd
+   ```
 9. For Executing:
    ```
    npm run start
@@ -111,9 +122,9 @@ This project focuses on automating crudBD operations for JSON files, making it e
 │   └── JsoncrudBD/
 │       └── bin/
 │           └── (frontend code)
-├── KData/
+├── Data/
 │   └── JSON/
-│       └── 316/
+│       └── 901/
 │           └── data.db
 ├── FromTableColumns/
 │   └── customers.json
@@ -211,27 +222,7 @@ when running the file from kcode/Backend.js
 
 for Database :
 
-root : KData/JSON folder the code is generated from 
-
-when running the file from kcode/Database.js
-
-it takes the configuration file ( config.json )
-
-and it takes the data path also from that file only
-
-28 Feb 2024
-
-5 March 2024 
-
-for Database 
-Mysql dosent have a datatype named NUMBER
-
-We have covered the below datatypes
-
-STRING
-INTEGER
-NUMBER ( converted to INTEGER )
-DATE
+root : Data 
 
 Databases covered
 
@@ -240,11 +231,6 @@ SQLite
 Mysql
 Postgres
 MongoDB
-
-errors can occur for mysql2 npm package for python
-sqlite3 npm also error can come
-
-16jun 2024 
 
 finished ui with nice admin
 
@@ -260,22 +246,8 @@ limitations
 
 for developers
 
-backend : bin
+backend : SV7
 
-database : KData
+database : Data
 
-frontend : publicDir/bin
-
-- 0.0.3
-
-binV5Secured config changed
-
-- 0.0.4
-
-qrcodes generated with new ui in v2
-
-- 1.0.1
-
-api deleted not using
-
-V6 api added
+frontend : public/V8

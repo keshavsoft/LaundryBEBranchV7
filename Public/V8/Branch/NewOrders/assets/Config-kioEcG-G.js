@@ -1,1 +1,0 @@
-const e={SaveButtonId:{redirectToUrl:"../../../Branch/BranchToday/HtmlFiles/QrRaiseAll.html"}},r="V6",s="Masters",t="CustomerNames",o={CustomerOrderKey:"CustomerOrders",ItemNamesKey:"ItemNames",AddOnsKey:"AddOns",OrderKey:"PresentOrder",PresentOrderAddOnsKey:"PresentOrderAddOns"},a={urls:e,routePath:r,folderName:s,tableName:t,localStorageKeys:o};export{a as C};
