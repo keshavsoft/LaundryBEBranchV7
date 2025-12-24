@@ -48,12 +48,15 @@ This project focuses on Laundry operations for JSON files, making it easy to man
    ```
    GenDataFromPk OnlyBackEnd
    ```
-7. Run .bat Files
+7. Run .bat Files for Login
    ```
-   :Root:/BatchFiles/ForLaundry/V4/forLogin.bat
-   :Root:/BatchFiles/ForLaundry/V4/forNewOrders.bat
+   .\BatchFiles\ForLaundry\V4\forLogin.bat
    ```
-8. Run the Application
+8. Run .bat Files for NewOrder
+   ```
+   .\BatchFiles\ForLaundry\V4\forNewOrders.bat
+   ```
+9. Run the Application
 - ```node app```
 
 ### <a name="advancedinstallation"></a>## **advancedinstallation** 🚀
@@ -95,29 +98,22 @@ This project focuses on Laundry operations for JSON files, making it easy to man
    ```
  
 #### **Key Features** 
-- **Dynamic Schema Handling:** Define table schemas using JSON files and dynamically generate crudBD operations.
+- **Dynamic Schema Handling:** Define table schemas using JSON files and dynamically generate LaundryBackEndV7 operations.
 - **Cross-Platform Compatibility:** Compatible with Windows, Mac, and Linux operating systems.
 - **Effortless Setup:** Use provided batch files for Windows or simple commands for other OS to set up the project quickly.
-- **Automatic Frontend Setup:** Automatically creates a frontend codebase in the public/JsoncrudBD directory.
+- **Automatic Frontend Setup:** Automatically creates a frontend codebase in the public Versin directory.
 #### **Technologies Used** 
 - **Node.js:** Leveraging the power of JavaScript on the server-side.
 - **Express.js:** A minimal and flexible Node.js web application framework for building robust APIs.
 - **SQLite:** A lightweight, file-based database for efficient data storage.
 - **npm:** The package manager for Node.js used for installing project dependencies.
 
-### <a name="BackEnd"></a>## **BackEnd** 🚀
-
-1. Delete all the folders starting with bin ( which is the BackEnd code).
-
-2. node .\KCode\ForBatV7\Backend.js
-   
-3. Now all the bin folders only are created ( which is the BackEnd code).
 
 ### <a name="folder-structure"></a>## **Folder Structure**
 
 ```plaintext
-├── KCode/
-│   └── EntryFile.js
+├── BatchFiles/
+│   └── ForLaundry
 ├── public/
 │   └── JsoncrudBD/
 │       └── bin/
@@ -126,14 +122,15 @@ This project focuses on Laundry operations for JSON files, making it easy to man
 │   └── JSON/
 │       └── 901/
 │           └── data.db
-├── FromTableColumns/
-│   └── customers.json
-├── FromData/
-│   └── (JSON files)
-├── bin/
-│   └── (backend code)
-├── BoilerPlate.bat
-├── boilerplate.sh
+├── Project/
+│   └── KWSServer
+├── Token/
+│   
+├── Secret/
+│   └── Generate
+|   └── Lagout
+├── app.js
+├── Schema.json
 ├── package.json
 ├── .env
 └── README.md
@@ -141,64 +138,11 @@ This project focuses on Laundry operations for JSON files, making it easy to man
 
 Database location :
 
-KData/JSON
+Data
 
 ### <a name="purpose-of-the-project"></a>## **Purpose of the Project** 🎯
-The primary objective is to simplify the process of managing and interacting with JSON files. By automating crudBD operations, this project aims to enhance efficiency and reduce the complexity of handling JSON data.
+The primary objective is to simplify the process of managing and interacting with JSON files. By automating LaundryBackEndV7 operations, this project aims to enhance efficiency and reduce the complexity of handling JSON data.
 ### <a name="important-points"></a>## **Important Points** 
-Date: 24 Jan 2024
-Stopped using encrypted SQLite database due to the unavailability of npm modules and limited knowledge within the team.
-
-advanced users
-follow the below steps also
-
-create .env file
-KS_SECRET_FORLOGIN=9848163021
-
-from Keshav
-
-table name : Users, is needed for user management
-
-13Feb2023 
-
-ready with only flat json 
-
-if want to run the repo without npm 
-
-BoilerPlate.bat -npm 
-
-the below steps avoids, npm installation, there by saving internet bandwidth.
-
-Follow Installation steps 1, 2, 3 then 
-
-4. Run the batch file (For Windows)
-   ```
-   
-   BoilerPlate.bat -npm
-   
-   ```
-   
- 5. For Executing:
-   
-   ```
-      npm run start
-   ```
-
-Purpose of this project
-
-at the root location KCode
-
-DataSchema define your schema
-
-crudBDGenerator/Config.json is the configuration file
-
-the meaning of the repo
-
-24 Feb 2024
-
-added support for reference or foreign key of the database, and tested it with 320 in sqlite
-
-in kcode config.json is keep in kcode root for much more cleaner look of the code
 
 
 for mock testing the end points:
@@ -213,24 +157,6 @@ code runner for executing batch files and js files
 
 https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner
 
-
-for Backend :
-
-root : bin folder the code is generated from 
-
-when running the file from kcode/Backend.js
-
-for Database :
-
-root : Data 
-
-Databases covered
-
-Flat JSON
-SQLite
-Mysql
-Postgres
-MongoDB
 
 finished ui with nice admin
 
